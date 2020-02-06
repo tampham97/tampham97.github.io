@@ -35,7 +35,7 @@ html, body{
     bottom: -1px;
     left: 0;
     width: 15%;
-    border-bottom: 1px solid var(--main-colorFont);
+    border-bottom: 1px solid var(--pink-color);
 }
 .small-title{
     padding: 1rem 0;
@@ -304,7 +304,7 @@ img{width: 100%;}
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
 .service-box:hover  .service-icon{
-    background: var(--main-colorFont);
+    background: var(--pink-color);
 }
 .service-box:hover  .service-icon {
     color: var(--main-white);
@@ -328,7 +328,7 @@ img{width: 100%;}
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    background: #212121;
+    background: var(--pink-color);
     color: var(--main-white);
 }
 .work-flow .work-item{
