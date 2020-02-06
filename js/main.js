@@ -6,7 +6,8 @@ $( document ).ready(function() {
         $('.tab-content').removeClass('active');
         $(this).addClass("active");
         $("#"+tab_id).addClass('active');
-        $(".right-area").scrollTop(0);
+        // $(".right-area").scrollTop(0);
+        $("#"+tab_id).scrollTop(0);
     })
 
     // toggle Ico Sidebar
