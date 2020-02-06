@@ -125,17 +125,17 @@ img{width: 100%;}
 }
 
 
-.side-bar .social ul li{
+.social ul li{
     text-align: center;
     margin: 15px 0;
     transition: .4s ;
     cursor: pointer;
 }
-.side-bar .social ul li a{
+.social ul li a{
     color: var(--second-colorFont);
     font-size: .9rem;
 }
-.side-bar .social ul li:hover a{
+.social ul li:hover a{
     color: var(--main-colorFont);
 }
 
@@ -609,11 +609,81 @@ img{width: 100%;}
     margin-right: .5rem;
 }
 /* end Blog section */
-
-
-
-/* about-service */
-/* end about-service */
+/* Contact */
+.contact{
+    width: 100%;
+}
+.info-contact{
+    padding: 2rem 0;
+}
+.box-contact,.get-in-touch{
+    background: var(--main-white);
+    box-shadow: 0 0 25px #f5f5f5;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.form-group{
+    padding: 0.5rem 1.5rem;
+}
+.form-group input,.form-group textarea{
+    width: 100%;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    font-family: 'Dosis', sans-serif;
+    color: var(--main-colorFont);
+}
+input[type=submit] {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: var(--pink-color);
+    margin: 0 0 1rem 1.5rem;
+    color: var(--main-white);
+    font-family: 'Dosis', sans-serif;
+    transition: .4s all;
+}
+input[type=submit]:hover {
+    color: var(--main-colorFont);
+    background: var(--main-white);
+    border: 1px solid var(--main-colorFont);
+}
+.get-in-touch .item{
+    display: flex;
+    padding: 1rem 0;
+}
+.get-in-touch .item  i{
+    color: var(--pink-color);
+    font-size: 1.5rem;
+    padding-right:2rem;
+    margin: auto 0;
+}
+.get-in-touch .item > h6{
+    color: var(--main-colorFont);
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.get-in-touch .item span{
+    margin-top: .5rem;
+    font-size: .9rem;
+    color: var(--second-colorFont);
+    text-transform: initial;
+    font-family: 'Open Sans', sans-serif;
+}
+.get-in-touch .social ul{
+    display: flex;
+    justify-content: center;
+}
+.get-in-touch .social ul li{
+    margin: 0 15px ;
+    transition: .4s ;
+}
+/* end Contact */
 
 /* responsive */
 /*Ipad ngang(1024 x 768)*/
