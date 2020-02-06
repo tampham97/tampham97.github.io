@@ -18,8 +18,8 @@ html, body{
     --main-white: #fff;
 }
 /* COMMON CLASSES */
-.mar{
-    margin: 0 2rem;
+.pad{
+    padding: 0 2rem;
 }
 .title,.small-title{
     padding: 1.5rem 0;
@@ -141,6 +141,7 @@ img{width: 100%;}
 /* RIGHT_AREA */
 .right-area{
     height: 100%;
+    width: 100%;
     position: relative;
     /* overflow-y:scroll; */
     overflow-y: scroll;
@@ -181,8 +182,6 @@ img{width: 100%;}
 
 .about{
     transition: .3s;
-    opacity: 0;
-    visibility: hidden;
 }
 .tab-content{
     position: absolute;
@@ -194,7 +193,7 @@ img{width: 100%;}
 }
 .tab-content.active{
     opacity: 1;
-     visibility: visible;
+    visibility: visible;
  }
 .about > .row{
     padding: 1.5rem 0;
@@ -353,7 +352,6 @@ img{width: 100%;}
     font-size: .7rem;
     font-family: 'Dosis', sans-serif;
 }
-
 .qoute{
     position: relative;
 }
@@ -402,6 +400,134 @@ img{width: 100%;}
     color: var(--second-colorFont);
 }
 /* ------END RESUME SECTION ----------*/
+/* Fortfolio section */
+.fortfolio{
+    width: 100%;
+}
+.fortfolio .category{
+    display: flex;
+    justify-content: center; 
+    padding: 1.5rem 0;
+}
+.fortfolio .category li{
+    margin: 0 1.5rem;
+    transition: .4s all;
+}
+.fortfolio .category li a{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-colorFont);
+}
+.fortfolio .category li a:hover,
+.fortfolio .category li a.active{
+    border-bottom: 1px solid var(--pink-color);
+}
+.fortfolio-content{
+    padding: 1rem 0;
+}
+.fortfolio-content .box{
+    padding: 1rem;
+}
+.fortfolio-content .work{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.fortfolio-content .work img{
+    widows: 100%;
+    height: 100%;
+}
+.fortfolio-content .work .work-desc{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: var(--main-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s all;
+}
+.fortfolio-content .work > h3,
+.fortfolio-content h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+.fortfolio-content .work  h5{
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-left: 1px solid var(--main-white);
+    padding-left: .5rem;
+}
+.fortfolio-content .work::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    transition: .4s all;
+    opacity: 0;
+    visibility: hidden;
+}
+.fortfolio-content .work:hover .work-desc,
+.fortfolio-content .work:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+.bg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 3;
+    display: none;
+}
+.bg-modal.active{
+    display: block;
+}
+.modal-work{
+    position: absolute;
+    background: var(--main-white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    cursor: initial;
+    z-index: 5;
+}
+
+.modal-work img{
+    width: 100%;
+    max-height: 550px;
+    position: relative;
+}
+.close-ico{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 1.5rem;
+    color: var(--main-white);
+    cursor: pointer;
+    z-index: 10;
+}
+.fortfolio-content{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* end Fortfolio section */
+
+
+
 /* about-service */
 /* end about-service */
 
@@ -446,6 +572,19 @@ img{width: 100%;}
     .work-flow .work-item h5::before {
         left: -22px;
     }    
+    /* portfolio */
+    .modal-work{
+        width: 70%;
+    }
+    .fortfolio .category{
+        justify-content: space-around
+    }
+    .fortfolio .category li{
+        margin: 0;
+    }
+    .fortfolio .category li a{
+        font-size: .8rem;
+    }
 
 }
 /*Tablet nhỏ(480 x 640)*/
@@ -484,6 +623,9 @@ img{width: 100%;}
     }
      .intro h4{
         font-size: 1rem;
+    }
+    .modal-work{
+        width: 85%;
     }
     
 }
