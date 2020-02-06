@@ -163,7 +163,7 @@ img{width: 100%;}
 .intro h2{
     font-size: 4rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
  .intro h4{
@@ -172,12 +172,39 @@ img{width: 100%;}
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: .5rem; 
+    display: flex;
+    justify-content: center;
 }
-.intro h4 span{
+/* .intro h4 span{
     background: var(--pink-color);
     color:var(--main-white);
     padding: .3rem;
+} */
+.intro h4 span{
+    background: var(--pink-color);
+    color:var(--main-white);
+    padding: 0 .3rem;
+    font-size: 2rem;
+    overflow: hidden; 
+    border-right: 3px solid var(--main-white);
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width:80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--main-white) }
+  }
+  
+
+
 /* ------END INTRO SECTION ----------*/
 /* ABOUT SECTION */
 .about{
