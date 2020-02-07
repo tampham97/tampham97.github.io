@@ -189,7 +189,8 @@ img{width: 100%;}
     border-right: 3px solid var(--main-white);
     white-space: nowrap; 
     margin: 0 auto; 
-    animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+    animation-delay: 3s;
 }
 /* The typing effect */
 @keyframes typing {
@@ -383,6 +384,16 @@ img{width: 100%;}
 .work-flow .work-item .date{
     font-size: .7rem;
     font-family: 'Dosis', sans-serif;
+}
+.work-flow .work-item .desc h6{
+    font-size: .9rem;
+    margin: .5rem 0;
+}
+.work-flow .work-item .desc p{
+    font-size: .9rem;
+    margin: 0 ;
+    margin-left: 1rem;
+    list-style: circle;
 }
 .qoute{
     position: relative;
