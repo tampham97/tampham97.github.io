@@ -1,4 +1,11 @@
+
 $( document ).ready(function() {
+    //preloading 
+    setTimeout(function () {
+    $('.pre-loading').fadeOut();
+    }, 3000);
+    
+
     // fortfolio
     $('.tab-link').click(function(){
         var tab_id = $(this).attr('data-tab');
